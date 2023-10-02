@@ -1,0 +1,55 @@
+.slides {
+    font-size: 0.75em;
+}
+.reveal ul {
+    display: block;
+}
+.reveal ol {
+    display: block;
+}
+
+/* enable multiple columns */
+/* https://stackoverflow.com/questions/30861845 */
+.container {
+    display: flex;
+    align-items: center;
+}
+.col {
+    flex: auto;
+}
+
+.box-def {
+    padding: 0px;
+    border: 4px solid #555555;
+    border-radius: 20px;
+    background: #cccccc;
+    margin: 5px;
+}
+
+.box-def-title {
+    background-color:#555555;
+    /* padding:0px; */
+    border-radius: 5px;
+    color:#fff;
+    font-weight:100;
+}
+.box-def-title p {
+    margin: 0;
+    padding: 0;
+}
+
+.box-ex {
+    padding: 0px;
+    border: 4px solid #0a4a0c;
+    border-radius: 20px;
+    background: #0a4a0c5f;
+    margin: 5px;
+}
+
+.box-ex-title{
+    background-color:#0a4a0c;
+    /* padding:0px; */
+    border-radius: 5px;
+    color:#fff;
+    font-weight:100;
+}

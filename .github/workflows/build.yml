@@ -30,12 +30,12 @@ jobs:
 
       - name: Create LaTeX beamer
         run: |
-          latexmk latex-beamer.tex
+          latexmk -shell-escape latex-beamer.tex
 
       - name: Create pandoc slides
         run: |
           chmod +x run-pandoc.sh
-          ./run-pandoc.sh
+          ./run-pandoc.sh --embed-resources --standalone
 
       - name: Convert revealjs slides to pdf
         run: |

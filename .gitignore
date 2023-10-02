@@ -11,6 +11,8 @@
 *.run.xml
 *.snm
 *.synctex.gz
+*.listing
+*.vrb
 
 latex-beamer.pdf
 pandoc-revealjs.html
