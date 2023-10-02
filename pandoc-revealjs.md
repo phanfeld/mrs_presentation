@@ -110,3 +110,13 @@ def Astar(G, d, v_s, v_z, h):
 
 ## References
 
+Great robotics books [@springerHandbook; @lavallePlanningBook]
+
+# References
+
+::: {#refs}
+:::
+
+# Appendix
+
+Some appendix at the end

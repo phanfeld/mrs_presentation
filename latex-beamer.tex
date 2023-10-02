@@ -144,6 +144,37 @@
   }
 }
 
+% references
+\usepackage[
+  backend=biber,
+  %style=authoryear,
+  style=numeric-comp,
+  maxcitenames=99,
+  maxbibnames=99,
+  hyperref=true,
+  %backref=true,
+  backref=false,
+  uniquelist=false,
+  natbib=true,
+  sorting=none]{biblatex}
+
+% If there is a DOI print it (and skip the URL); if there is no DOI, but an URL, show that instead.
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=doi,final]
+      \step[fieldset=url,null]
+    }
+  }
+}
+
+% reduce size of cite's
+\appto{\citesetup}{\footnotesize}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\addbibresource{references.bib}
+
 \title{Slide Examples}
 \subtitle{\LaTeX Beamer}
 \author{Wolfgang Hönig}
@@ -265,15 +296,15 @@
   \begin{frame}[fragile]{Source Code}
 
     \begin{myminted}{python, nobeforeafter, boxsep=0.0mm}
-      def Astar(|$\mathcal G, d, v_s, v_z, h$|):
-        |$O =$| queue()
-        while |$O\neq \emptyset$|:
-          # smallest f-value
-          |$v = O$|.pop()
-          if |$v = v_z$|:
-            return solution
-          for n in v.neighbor:
-            # ...
+      def Astar(G, d, v_s, v_z, h):
+          O = queue()
+          while O not empty:
+              # smallest f-value
+              v = O.pop()
+              if v = v_z:
+                  return solution
+              for n in v.neighbor:
+              # ...
     \end{myminted}
 
   \end{frame}
@@ -284,6 +315,8 @@
 
 
   \begin{frame}{References}
+
+    Great robotics books \cite{springerHandbook,lavallePlanningBook}
 
   \end{frame}
 
@@ -308,6 +341,10 @@
         \end{itemize}
       \end{column}
     \end{columns}
+  \end{frame}
+
+  \begin{frame}[allowframebreaks]{References}
+    \printbibliography[heading=none]
   \end{frame}
 
 \end{document}
