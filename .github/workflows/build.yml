@@ -34,7 +34,8 @@ jobs:
 
       - name: Create pandoc slides
         run: |
-          pandoc -V theme=white -s -t revealjs pandoc-revealjs.md -o pandoc-revealjs.html
+          chmod +x run-pandoc.sh
+          ./run-pandoc.sh
 
       - name: Convert revealjs slides to pdf
         run: |
