@@ -18,10 +18,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       
-      - name: Install dependencies
+      - name: Install dependencies for latex
         run: |
           sudo apt update
-          sudo apt install -y texlive texlive-latex-extra texlive-bibtex-extra texlive-science biber latexmk
+          sudo apt install -y texlive texlive-latex-extra texlive-luatex texlive-bibtex-extra texlive-science biber latexmk
+
 
       - name: Create LaTeX beamer
         run: |
