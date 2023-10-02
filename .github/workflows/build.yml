@@ -38,7 +38,7 @@ jobs:
 
       - name: Convert revealjs slides to pdf
         run: |
-          sudo docker run --rm -t -v `pwd`:/slides astefanutti/decktape pandoc-revealjs.html /slides/pandoc-revealjs.pdf
+          docker run --user root --rm -t -v `pwd`:/slides astefanutti/decktape pandoc-revealjs.html pandoc-revealjs.pdf
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v3
