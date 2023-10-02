@@ -13,3 +13,5 @@
 *.synctex.gz
 
 latex-beamer.pdf
+pandoc-revealjs.html
+pandoc-revealjs.pdf
