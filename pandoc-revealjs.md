@@ -13,3 +13,7 @@
 1. Item1
 2. Item
 3. Item3 with *important* text
+
+# Picture
+
+![](images/robotics.svg)
