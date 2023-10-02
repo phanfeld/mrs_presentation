@@ -112,11 +112,13 @@ def Astar(G, d, v_s, v_z, h):
 
 Great robotics books [@springerHandbook; @lavallePlanningBook]
 
-# References
+# Appendix
+
+## References
 
 ::: {#refs}
 :::
 
-# Appendix
+## Appendix
 
 Some appendix at the end

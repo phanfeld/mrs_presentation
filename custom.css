@@ -53,3 +53,8 @@
     color:#fff;
     font-weight:100;
 }
+
+#refs {
+    height: 800px;
+    overflow-y: auto !important;
+}
