@@ -1,0 +1,15 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.toc
+*.run.xml
+*.snm
+*.synctex.gz
+
+latex-beamer.pdf
