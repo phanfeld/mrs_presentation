@@ -25,7 +25,7 @@ jobs:
 
       - name: Create LaTeX beamer
         run: |
-          latex-mk latex-beamer.tex
+          latexmk latex-beamer.tex
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v3
