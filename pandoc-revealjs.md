@@ -2,7 +2,14 @@
 title: Slide Examples
 subtitle: Pandoc revealjs
 author: Wolfgang Hönig
-date: October, 2023
+date: November, 2023
+
+title-slide-attributes:
+    data-background-image: images/title.svg
+    data-background-size: contain
+
+minScale: 0.2
+maxScale: 10.0
 ---
 
 # Layout
@@ -105,6 +112,71 @@ def Astar(G, d, v_s, v_z, h):
 ```
 
 # Animations
+
+
+
+## Lists (using pause)
+
+- item1
+
+. . .
+
+- item2
+
+. . .
+
+- item3
+
+## Lists (using fenced div)
+
+::: fragment
+- item1
+:::
+::: fragment
+- item2
+:::
+::: fragment
+- item3
+:::
+
+## Appearing Box
+
+::: {.container}
+
+:::: {.col .element: class="fragment" data-fragment-index="2"}
+::::: {.box-red}
+Box1
+:::::
+::::
+
+:::
+
+::: {.container}
+
+:::: {.col .element: class="fragment" data-fragment-index="1"}
+::::: {.box-red}
+Box2
+:::::
+::::
+
+:::
+
+## Replacing pictures
+
+<!-- https://stackoverflow.com/questions/23608762/replace-image-in-reveal-js -->
+
+::: {.r-stack}
+:::: {.fragment .current-visible}
+![](images/robotics.svg)
+::::
+:::: {.fragment .current-visible}
+![](images/robotics.svg)
+::::
+:::
+
+## Custom Slide Transition {data-transition="fade-in fade-out"}
+
+- custom slide transition
 
 # Misc
 

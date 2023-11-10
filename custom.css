@@ -1,3 +1,25 @@
+.reveal h1 {font-size: 1em; }
+
+.reveal h2 {font-size: 0.8em; }
+
+.reveal h3 {font-size: 0.6em; }
+
+.reveal h4 {font-size: 0.4em; }
+
+.slides em {
+    color:#e99a24;
+    font-style: normal;
+}
+
+.citation {
+    font-size: 0.6em;
+}
+
+.csl-entry {
+    text-align: left;
+    font-size: 0.6em;
+}
+
 .slides {
     font-size: 0.75em;
 }
@@ -52,6 +74,28 @@
     border-radius: 5px;
     color:#fff;
     font-weight:100;
+}
+
+.box-red {
+    padding: 0px;
+    border: 4px solid #79070b;
+    border-radius: 20px;
+    background: #79070b5f;
+    margin: 5px;
+}
+
+.box-red-title{
+
+    background-color:#79070b;
+    border-radius: 5px;
+    color:#fff;
+    font-weight:100;
+
+}
+
+.box-red-title p {
+    margin: 0;
+    padding: 0;
 }
 
 #refs {
