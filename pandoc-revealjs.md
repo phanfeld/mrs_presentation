@@ -67,6 +67,20 @@ text
 Normal block without title
 :::
 
+::: {.box-ex}
+:::: {.box-ex-title}
+Green block with title
+::::
+text
+:::
+
+::: {.box-red}
+:::: {.box-red-title}
+Red block with title
+::::
+text
+:::
+
 # Multimedia
 
 ## Picture
