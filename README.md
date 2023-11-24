@@ -12,12 +12,12 @@ Note that videos cannot be embedded and need to be stored alongside the PDF in a
 
 Use pympress (https://github.com/Cimbali/pympress) to present. At the moment, auto-starting videos does not work, see https://github.com/Cimbali/pympress/issues/212. Since I prefer all videos to autostart, I use my own fork that auto-starts and mutes all videos, which is available at https://github.com/whoenig/pympress.
 
-Important keys:
+### Important keys
 
-F - full screen
-D - Overview of all slides
-L - enable virtual laserpointer
-S - swap screens
+* F - full screen
+* D - Overview of all slides
+* L - enable virtual laserpointer
+* S - swap screens
 
 ## RevealJs
 
@@ -35,18 +35,15 @@ Note that this will embed all media files including videos, so only the HTML fil
 
 * There is a presenter mode, but it only works when using the "Live Server" (not when just opening the html file in the browser):
 
-Important keys:
+### Important keys
 
-F - full screen
-S - speaker view (requires live server)
-ESC - slide overview (and ending fullscreen, typically)
+* F - full screen
+* S - speaker view (requires live server)
+* ESC - slide overview (and ending fullscreen, typically)
 
-## References revealjs
+## References
 
-https://github.com/xieby1/markdown_revealjs
-
-https://gist.github.com/jsoma/629b9564af5b1e7fa62d0a3a0a47c296
-
-https://gisbers.de/posts/revealjs-pandoc/
-
-https://github.com/shd101wyy/markdown-preview-enhanced/blob/master/docs/pandoc-bibliographies-and-citations.md
+* https://github.com/xieby1/markdown_revealjs
+* https://gist.github.com/jsoma/629b9564af5b1e7fa62d0a3a0a47c296
+* https://gisbers.de/posts/revealjs-pandoc/
+* https://github.com/shd101wyy/markdown-preview-enhanced/blob/master/docs/pandoc-bibliographies-and-citations.md
