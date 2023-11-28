@@ -1,1 +1,1 @@
-pandoc -V theme=white --citeproc --bibliography *.bib --css custom.css --mathjax -s -t revealjs pandoc-revealjs.md -o pandoc-revealjs.html $@
+pandoc -V theme=black --citeproc --bibliography *.bib --css custom.css --mathjax -s -t revealjs pandoc-revealjs.md -o pandoc-revealjs.html $@

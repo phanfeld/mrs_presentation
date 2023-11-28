@@ -1,8 +1,8 @@
 ---
-title: Slide Examples
-subtitle: Pandoc revealjs
-author: Wolfgang Hönig
-date: November, 2023
+title: Kidnapping Deep Learning-based Multirotors using Optimized Flying Adversarial Patches
+# subtitle: Pandoc revealjs
+author: Pia Hanfeld, Khaled Whaba, Marina M.-C. Höhne, Michael Bussmann, Wolfgang Hönig
+date: December 3rd, 2023
 
 title-slide-attributes:
     data-background-image: images/title.svg
@@ -10,201 +10,120 @@ title-slide-attributes:
 
 minScale: 0.2
 maxScale: 10.0
+slideNumber: true
+navigationMode: 'linear'
 ---
-
-# Layout
-
-## Lists
-
-- Item1
-- Item2
-- Item3 with *important* text
-
-## Enumerations
-
-1. Item1
-2. Item2
-3. Item3 with *important* text
-
-## Columns
-
-::: {.container}
-:::: {.col}
-Column 1  
-abc
-::::
-:::: {.col}
-Column 2  
-abc
-::::
-:::
+# Motivation
+## Real-world adversarial attacks
+* Adversarial patches are widely applied in Computer Vision and Autonomous Driving domain
 
 
-::: {.container}
-:::: {.col}
-Column a  
-abc
-::::
-:::: {.col}
-Column b
-::::
-:::: {.col}
-Column c  
-abc
-::::
-:::
+![](images/patch_stop_signs.svg)\
+[@Eykholt2018]
 
-## Blocks
+![](images/patch_cv.svg)\
+[@Thys2019]
 
-::: {.box-def}
-:::: {.box-def-title}
-Normal block with title
-::::
-text
-:::
-
-::: {.box-def}
-Normal block without title
-:::
-
-::: {.box-ex}
-:::: {.box-ex-title}
-Green block with title
-::::
-text
-:::
-
-::: {.box-red}
-:::: {.box-red-title}
-Red block with title
-::::
-text
-:::
-
-# Multimedia
-
-## Picture
-
-![](images/robotics.svg)
-
-## Math
-
-$$
-\begin{align}
-\arg\min_{T, u(t), q(t)} \quad J(T, u(t), q(t)) \quad \text{s.t.}\\
-q(0) = q_{start} \quad q(T) = q_{goal}\\
-\mathcal{B}(q(t)) \subset \mathcal{W}_{free} \quad \forall t \in [0, T]\\
-\dot q(t) = f(q(t), u(t)) \quad \forall t \in [0, T)
-\end{align}
-$$
-
-## Video
-
-```{=html}
-<video data-autoplay src="videos/cubic-bezier.mp4"></video>
-```
-
-<!-- Full screen video -->
-## 
-
-```{=html}
-<video data-autoplay src="videos/cubic-bezier.mp4" width="100%"></video>
-```
-
-## Source Code
-
-```python
-def Astar(G, d, v_s, v_z, h):
-    O = queue()
-    while O not empty:
-        # smallest f-value
-        v = O.pop()
-        if v = v_z:
-            return solution
-        for n in v.neighbor:
-        # ...
-```
-
-# Animations
-
-
-
-## Lists (using pause)
-
-- item1
+## State of the art
+- Current adversarial attacks for UAVs do not negatively affect the control
 
 . . .
 
-- item2
+- Patches are either static or placed on moving objects close to the ground
 
-. . .
+## Can we find adversarial patches and an attacker policy that allows for full control over the victim UAV?
 
-- item3
+# Flying Adversarial Patches
+## Scenario
 
-## Lists (using fenced div)
+![](images/overview_v7.png)\
+Will be replaced!
 
-::: fragment
-- item1
-:::
-::: fragment
-- item2
-:::
-::: fragment
-- item3
-:::
+## The deep learning model under attack
 
-## Appearing Box
+```{=html}
+<video data-autoplay src="videos/clip_frontnet.m4v"></video>
+```
+PULP-Frontnet [@Palossi2022]
 
-::: {.container}
 
-:::: {.col .element: class="fragment" data-fragment-index="2"}
-::::: {.box-red}
-Box1
-:::::
-::::
-
-:::
-
-::: {.container}
-
-:::: {.col .element: class="fragment" data-fragment-index="1"}
-::::: {.box-red}
-Box2
-:::::
-::::
-
-:::
-
-## Replacing pictures
-
-<!-- https://stackoverflow.com/questions/23608762/replace-image-in-reveal-js -->
-
+## From pattern and position to policy
 ::: {.r-stack}
 :::: {.fragment .current-visible}
-![](images/robotics.svg)
+![](images/retrieve_policy_1_1.png)
 ::::
 :::: {.fragment .current-visible}
-![](images/robotics.svg)
+![](images/retrieve_policy_1_2.png)
+::::
+:::: {.fragment .current-visible}
+![](images/retrieve_policy_1_3.png)
+::::
+:::: {.fragment .current-visible}
+![](images/retrieve_policy_2_1.png)
+::::
+:::: {.fragment .current-visible}
+![](images/retrieve_policy_2_2.png)
+::::
+:::: {.fragment .current-visible}
+![](images/retrieve_policy_3.png)
 ::::
 :::
 
-## Custom Slide Transition {data-transition="fade-in fade-out"}
+## Optimizing the patches and their positions
+![](images/schematic_attack_1.svg)
 
-- custom slide transition
+## Target Trajectory
+![](images/target_trajectory.svg)
 
-# Misc
+## Assignment
+![](images/schematic_attack_2.svg)
 
-## References
+## Optimization
+![](images/schematic_attack_3.svg)
 
-Great robotics books [@springerHandbook; @lavallePlanningBook]
+## Optimization
+- Compared 3 different optimization algorithms:\
+![](images/plot_exp1_2.svg)
+![](images/plot_exp1_3.svg)
 
-# Appendix
+## Optimization
+![](images/plot_exp1_1.svg)
+
+## Scalability
+![](images/exp2.svg)
+
+
+# Real-world experiments
+## Attacker and victim
+## 
+```{=html}
+<video data-autoplay src="videos/only_attacker.m4v"></video>
+```
+## Person, attacker and victim
+## 
+```{=html}
+<video data-autoplay src="videos/attacker_person.m4v"></video>
+```
+## An actual kidnapping
+## 
+```{=html}
+<video data-autoplay src="videos/attacker_gate.m4v"></video>
+```
+
+# Summary
+## Contributions
+- Adversarial patches that can be placed anywhere in the environment
+c
+
+- Attacker policy that is able to force victim onto target trajectory
+
+. . .
+
+- Scalable to team of attacker and victims UAVs
+
+. . .
 
 ## References
 
 ::: {#refs}
 :::
-
-## Appendix
-
-Some appendix at the end
