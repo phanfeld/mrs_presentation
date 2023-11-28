@@ -12,6 +12,7 @@ minScale: 0.2
 maxScale: 10.0
 slideNumber: true
 navigationMode: 'linear'
+controls: false
 ---
 # Motivation
 ## Real-world adversarial attacks
