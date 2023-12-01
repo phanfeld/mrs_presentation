@@ -1,8 +1,8 @@
 ---
 title: Kidnapping Deep Learning-based Multirotors using Optimized Flying Adversarial Patches
 # subtitle: Pandoc revealjs
-author: Pia Hanfeld, Khaled Whaba, Marina M.-C. Höhne, Michael Bussmann, Wolfgang Hönig
-date: December 3rd, 2023
+author: Pia Hanfeld, Khaled Wahba, Marina M.-C. Höhne, Michael Bussmann, Wolfgang Hönig
+date: December 4th, 2023
 
 title-slide-attributes:
     data-background-image: images/title.svg
@@ -26,11 +26,11 @@ controls: false
 [@Thys2019]
 
 ## State of the art
-- Current adversarial attacks for UAVs do not negatively affect the control
+- Patches are either static or placed on moving objects close to the ground
 
 . . .
 
-- Patches are either static or placed on moving objects close to the ground
+- Current adversarial attacks for UAVs do not negatively affect the control
 
 ## Can we find adversarial patches and an attacker policy that allows for full control over the victim UAV?
 
@@ -51,9 +51,6 @@ PULP-Frontnet [@Palossi2022]
 ## From pattern and position to policy
 ::: {.r-stack}
 :::: {.fragment .current-visible}
-<!-- ```{=html}
-<img src="images/retrieve_policy_1_1.png" alt="drawing" height="300"/>
-``` -->
 ![](images/retrieve_policy_1_1.png){width=80%}
 ::::
 :::: {.fragment .current-visible}
@@ -74,7 +71,7 @@ PULP-Frontnet [@Palossi2022]
 :::
 
 ## Optimizing the patches and their positions
-![](images/schematic_attack_1.svg)
+![](images/schematic_attack_1.svg){width=100%}
 
 ## Target Trajectory
 ![](images/target_trajectory.svg)
@@ -119,13 +116,17 @@ PULP-Frontnet [@Palossi2022]
 ## Contributions
 - Adversarial patches that can be placed anywhere in the environment
 
+![](images/overview_v7.png)
+
+## Contributions
+- Scalable to team of attacker and victims UAVs
+![](images/overview_v7.png)\
+Replace!
+
+## Contributions
 - Attacker policy that is able to force victim onto target trajectory
 
-. . .
-
-- Scalable to team of attacker and victims UAVs
-
-. . .
+Add stills from video
 
 ## Thank you for your attention!
 Questions? Let's chat during the breaks or feel free to mail me: p.hanfeld@hzdr.de
