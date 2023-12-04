@@ -36,9 +36,7 @@ controls: false
 
 # Flying Adversarial Patches
 ## Scenario
-
-![](images/overview_v7.png)\
-Will be replaced!
+![](images/two_attacker_3.svg){width=80%}
 
 ## The deep learning model under attack
 
@@ -120,16 +118,18 @@ PULP-Frontnet [@Palossi2022]
 
 ## Contributions
 - Scalable to team of attacker and victims UAVs
-![](images/overview_v7.png)\
-Replace!
+
+![](images/two_attacker.svg){width=80%}
 
 ## Contributions
 - Attacker policy that is able to force victim onto target trajectory
 
-Add stills from video
+![](images/forced_victim.svg)
 
-## Thank you for your attention!
-Questions? Let's chat during the breaks or feel free to mail me: p.hanfeld@hzdr.de
+
+## Questions?
+Let's chat during the breaks or send me a mail: p.hanfeld@hzdr.de\
+![](images/qrcode.svg){width=30%}
 
 ## References
 ::: {#refs}
