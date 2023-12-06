@@ -38,7 +38,7 @@ controls: false
 ## Scenario
 ![](images/two_attacker_3.svg){width=80%}
 
-## The deep learning model under attack
+## The deep learning model
 
 ```{=html}
 <video data-autoplay src="videos/clip_frontnet.m4v"></video>
@@ -128,7 +128,7 @@ PULP-Frontnet [@Palossi2022]
 
 
 ## Questions?
-Let's chat during the breaks or send me a mail: p.hanfeld@hzdr.de\
+Let's have a chat or send a mail: p.hanfeld@hzdr.de\
 ![](images/qrcode.svg){width=30%}
 
 ## References
